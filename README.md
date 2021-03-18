@@ -41,4 +41,4 @@ $ mvn clean package -P graalvm
 $ ./target/hello <name>
 ~~~
 
-Don't omit `clean`. If you omit `clean` then generated native image will be broken.
+Don't omit `clean`. If you omit `clean` then the native image will be broken.
