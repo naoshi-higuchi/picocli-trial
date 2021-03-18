@@ -23,8 +23,22 @@ export PATH=<graalvm>/bin:$PATH
 $ gu install native-image
 ~~~
 
-## Build
+## Build & Run
+
+### Java
 
 ~~~
-$ mvn package
+$ mvn clean package
+
+$ java -jar target/picocli-trial-1.0-SNAPSHOT-jar-with-dependencies.jar <name>
 ~~~
+
+### Native image
+
+~~~
+$ mvn clean package -P graalvm
+
+$ ./target/hello <name>
+~~~
+
+Don't omit `clean`. If you omit `clean` then generated native image will be broken.
