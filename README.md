@@ -23,6 +23,8 @@ export PATH=<graalvm>/bin:$PATH
 $ gu install native-image
 ~~~
 
+`native-image` command is kicked automatically via native-image-maven-plugin.
+
 ## Build & Run
 
 ### Java
