@@ -61,7 +61,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>org.nopware.trial.picocli.Hello</mainClass>
+                            <mainClass>org.nopware.trial.picocli.Say</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -115,8 +115,8 @@
                         </executions>
                         <configuration>
                             <skip>false</skip>
-                            <imageName>hello</imageName>
-                            <mainClass>org.nopware.trial.picocli.Hello</mainClass>
+                            <imageName>say</imageName>
+                            <mainClass>org.nopware.trial.picocli.Say</mainClass>
                             <buildArgs>
                                 --no-fallback
                             </buildArgs>
