@@ -32,7 +32,7 @@ $ gu install native-image
 ~~~
 $ mvn clean package
 
-$ java -jar target/picocli-trial-1.0-SNAPSHOT-jar-with-dependencies.jar <name>
+$ java -jar target/picocli-trial-1.0-SNAPSHOT-jar-with-dependencies.jar <hi or bye> <name>
 ~~~
 
 ### Native image
@@ -40,7 +40,7 @@ $ java -jar target/picocli-trial-1.0-SNAPSHOT-jar-with-dependencies.jar <name>
 ~~~
 $ mvn clean package -P graalvm
 
-$ ./target/hello <name>
+$ ./target/say <hi or bye> <name>
 ~~~
 
 Don't omit `clean`. If you omit `clean` then the native image will be broken.
